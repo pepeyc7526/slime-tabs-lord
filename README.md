@@ -2,8 +2,6 @@
 
 **Close tabs with style!** An animated slime mascot helps you manage your browser tabs.
 
-Made with ❤️ and **Qwen AI** assistance!
-
 ## ✨ Features
 
 - 🔢 Big canvas number in toolbar
@@ -26,7 +24,7 @@ Made with ❤️ and **Qwen AI** assistance!
 
 ## 🤝 Credits
 
-Made with **Qwen AI** assistance
+Made with **Qwen AI** assistance ❤️
 
 ## 📄 License
 
