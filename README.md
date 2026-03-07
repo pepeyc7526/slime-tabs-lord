@@ -1,3 +1,12 @@
+<!-- Badges -->
+<p align="center">
+  <img src="https://img.shields.io/github/license/pepeyc7526/slime-tabs-lord?style=flat-square" alt="License">
+  <img src="https://img.shields.io/github/languages/top/pepeyc7526/slime-tabs-lord?style=flat-square" alt="Language">
+  <img src="https://img.shields.io/github/v/release/pepeyc7526/slime-tabs-lord?style=flat-square" alt="Version">
+  <img src="https://img.shields.io/badge/Firefox-142.0+-orange?style=flat-square" alt="Firefox">
+  <img src="https://img.shields.io/badge/Manifest-V2-blue?style=flat-square" alt="Manifest">
+</p>
+
 # 🐌 Slime Tabs Lord
 
 **Close tabs with style!** An animated slime mascot helps you manage your browser tabs.
@@ -21,6 +30,16 @@
 ## 📋 Requirements
 
 - Firefox 142.0 or higher
+
+## 📦 Installation
+
+**From Mozilla Add-ons:**  
+👉 [Install from Firefox Add-ons](https://addons.mozilla.org/firefox/addon/slime-tabs-lord/)
+
+**Manual install (from GitHub):**
+1. Download the latest `.xpi` from [Releases](https://github.com/pepeyc7526/slime-tabs-lord/releases)
+2. Open Firefox → `about:debugging` → "This Firefox" → "Load Temporary Add-on"
+3. Select the `.xpi` file
 
 ## 🤝 Credits
 
