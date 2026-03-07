@@ -1,5 +1,5 @@
 <!-- Badges -->
-<p align="center">
+<p align="left">
   <img src="https://img.shields.io/github/license/pepeyc7526/slime-tabs-lord?style=flat-square" alt="License">
   <img src="https://img.shields.io/github/languages/top/pepeyc7526/slime-tabs-lord?style=flat-square" alt="Language">
   <img src="https://img.shields.io/github/v/release/pepeyc7526/slime-tabs-lord?style=flat-square" alt="Version">
