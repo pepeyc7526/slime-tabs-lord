@@ -31,3 +31,17 @@ Made with **Qwen AI** assistance
 ## 📄 License
 
 MIT License
+
+## 🔒 Privacy Policy
+
+**Slime Tabs Lord collects no data.**
+
+- ❌ No tracking, analytics, or telemetry
+- ❌ No external network requests
+- ❌ No access to browsing history or tab URLs
+
+**Permissions:**
+- `tabs` — count/close tabs only
+- `storage` — save your settings locally
+
+All data stays on your device.
