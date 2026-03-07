@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Settings — Slime Tabs Lord</title>
+<link rel="stylesheet" href="options.css">
+</head>
+<body>
+<div class="container">
+<h1><img src="icons/icon-settings.png" class="settings-icon" alt=""> Settings</h1>
+<section>
+<h2>Toolbar Number Style</h2>
+<div class="setting"><label for="badgeColor">Number Color:</label><input type="color" id="badgeColor" value="#cccccc"></div>
+<div class="setting"><label for="bgColor">Background Color:</label><input type="color" id="bgColor" value="#111111"></div>
+<div class="setting"><label for="fontWeight">Font Weight:</label>
+<select id="fontWeight"><option value="normal">Normal</option><option value="bold" selected>Bold</option></select>
+</div>
+<div class="setting full-width"><label class="checkbox-label">
+<input type="checkbox" id="transparent"> Transparent Background
+</label><p class="hint-text">When enabled, the number has no background</p></div>
+</section>
+<section>
+<h2>Popup Style</h2>
+<div class="setting"><label for="popupBg">Popup Background:</label><input type="color" id="popupBg" value="#111111"></div>
+<div class="setting"><label for="popupText">Popup Text Color:</label><input type="color" id="popupText" value="#cccccc"></div>
+</section>
+<section>
+<h2>Button Colors</h2>
+<div class="setting"><label for="btnCloseOthers">Close Others BG:</label><input type="color" id="btnCloseOthers" value="#ef4444"></div>
+<div class="setting"><label for="btnCloseRight">Close Right BG:</label><input type="color" id="btnCloseRight" value="#f59e0b"></div>
+<div class="setting"><label for="btnSettings">Settings BG:</label><input type="color" id="btnSettings" value="#64748b"></div>
+<div class="setting full-width"><label class="checkbox-label">
+<input type="checkbox" id="btnTransparent" checked> Transparent Button Background
+</label><p class="hint-text">Buttons will have no background, only icons</p></div>
+</section>
+<section>
+<h2>Slime Outline</h2>
+<div class="setting"><label for="slimeOutline">Outline Color:</label><input type="color" id="slimeOutline" value="#ffffff"></div>
+<div class="setting full-width"><label class="checkbox-label">
+<input type="checkbox" id="slimeOutlineEnabled" checked> Enable Outline
+</label><p class="hint-text">Add a border around the slime</p></div>
+</section>
+<section>
+<h2>Behavior</h2>
+<div class="setting full-width"><label class="checkbox-label">
+<input type="checkbox" id="closePopup"> Close popup after action
+</label><p class="hint-text">Uncheck to keep popup open after closing tabs</p></div>
+</section>
+<div class="actions">
+<button id="save" class="btn btn-primary" type="button">Save</button>
+<button id="reset" class="btn btn-secondary" type="button">Reset</button>
+</div>
+<div id="message" class="message" role="status"></div>
+</div>
+<script src="utils.js"></script>
+<script src="options.js"></script>
+</body>
+</html>

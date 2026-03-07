@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slime Tabs Lord</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<div class="container">
+<div class="slime-wrapper">
+<div class="slime-outline" id="slimeOutline"></div>
+<div class="slime" id="slime">
+<div class="boss-glasses"><div class="glass"></div><div class="glass"></div></div>
+<div class="eyes">
+<div class="eye left"><div class="pupil"></div><div class="eyelid"></div></div>
+<div class="eye right"><div class="pupil"></div><div class="eyelid"></div></div>
+</div>
+<div class="blush left"></div><div class="blush right"></div>
+<div class="mouth"></div>
+</div>
+<div class="tab-cubes" id="tabCubes"></div>
+</div>
+<h3><img src="icons/icon-tabs.png" class="header-icon" alt=""> Tabs: <span id="tabCount">0</span></h3>
+<div class="button-group">
+<button id="closeOthers" class="btn btn-danger" title="Close other tabs">
+<img src="icons/icon-close-others.png" class="btn-icon" alt="">
+</button>
+<button id="closeRight" class="btn btn-warning" title="Close tabs to the right">
+<img src="icons/icon-close-right.png" class="btn-icon" alt="">
+</button>
+<button id="openOptions" class="btn btn-settings" title="Open settings">
+<img src="icons/icon-settings.png" class="btn-icon" alt="">
+</button>
+</div>
+</div>
+<script src="utils.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>

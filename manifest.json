@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "Slime Tabs Lord",
+  "version": "1.0.0",
+  "description": "Close tabs with style! An adorable animated slime mascot helps you manage browser tabs with fun animations and customizable colors.",
+  "author": "pepeyc7526",
+  "homepage_url": "https://github.com/pepeyc7526/slime-tabs-lord",
+  "permissions": ["tabs", "storage"],
+  "background": {"scripts": ["background.js"]},
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Slime Tabs Lord"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "icons": {
+    "48": "icons/icon-logo-48.png",
+    "96": "icons/icon-logo-96.png",
+    "128": "icons/icon-logo-128.png"
+  },
+  "content_security_policy": "script-src 'self'; object-src 'self'",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "slime-tabs-lord@pepeyc7526.github.io",
+      "strict_min_version": "142.0",
+      "data_collection_permissions": {
+        "collects_data": false,
+        "required": ["tabs", "storage"]
+      }
+    }
+  }
+}
