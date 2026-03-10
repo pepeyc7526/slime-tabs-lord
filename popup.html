@@ -8,7 +8,15 @@
 </head>
 <body>
 <div class="container">
-<div class="slime-wrapper">
+<div class="tabs-info" id="tabsInfo">Tabs: <span id="tabCount">0</span></div>
+<div class="speech-bubble" id="speechBubble"></div>
+<div class="main-row">
+<div class="settings-col">
+<button id="openOptions" class="btn btn-settings">
+<img src="icons/slime-settings.svg" class="btn-icon" alt="">
+</button>
+</div>
+<div class="slime-col">
 <div class="slime-outline" id="slimeOutline"></div>
 <div class="slime" id="slime">
 <div class="boss-glasses"><div class="glass"></div><div class="glass"></div></div>
@@ -19,22 +27,34 @@
 <div class="blush left"></div><div class="blush right"></div>
 <div class="mouth"></div>
 </div>
+</div>
+<div class="cubes-col">
 <div class="tab-cubes" id="tabCubes"></div>
 </div>
-<h3><img src="icons/icon-tabs.png" class="header-icon" alt=""> Tabs: <span id="tabCount">0</span></h3>
-<div class="button-group">
-<button id="closeOthers" class="btn btn-danger" title="Close other tabs">
-<img src="icons/icon-close-others.png" class="btn-icon" alt="">
+</div>
+<div class="button-row">
+<button id="undoClose" class="btn btn-undo">
+<img src="icons/slime-undo-close.svg" class="btn-icon" alt="">
 </button>
-<button id="closeRight" class="btn btn-warning" title="Close tabs to the right">
-<img src="icons/icon-close-right.png" class="btn-icon" alt="">
+<button id="duplicateTab" class="btn btn-duplicate">
+<img src="icons/slime-duplicate-tab.svg" class="btn-icon" alt="">
 </button>
-<button id="openOptions" class="btn btn-settings" title="Open settings">
-<img src="icons/icon-settings.png" class="btn-icon" alt="">
+<button id="muteTab" class="btn btn-mute">
+<img src="icons/slime-toggle-mute.svg" class="btn-icon" alt="">
+</button>
+</div>
+<div class="button-row">
+<button id="closeOthers" class="btn btn-danger">
+<img src="icons/slime-close-other.svg" class="btn-icon" alt="">
+</button>
+<button id="closeRight" class="btn btn-warning">
+<img src="icons/slime-close-right.svg" class="btn-icon" alt="">
+</button>
+<button id="removeDuplicates" class="btn btn-remove-duplicates">
+<img src="icons/slime-close-duplicates.svg" class="btn-icon" alt="">
 </button>
 </div>
 </div>
-<script src="utils.js"></script>
-<script src="popup.js"></script>
+<script type="module" src="popup.js"></script>
 </body>
 </html>

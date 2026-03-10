@@ -3,12 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Settings — Slime Tabs Lord</title>
+<title>Settings - Slime Tabs Lord</title>
 <link rel="stylesheet" href="options.css">
 </head>
-<body>
+<body class="dark-theme">
 <div class="container">
-<h1><img src="icons/icon-settings.png" class="settings-icon" alt=""> Settings</h1>
+<div class="header-with-theme">
+<h1><img src="icons/slime-settings.svg" class="settings-icon" alt=""> Settings</h1>
+<div class="theme-toggle-icons">
+<button class="theme-icon-btn" data-theme="light" title="Light Theme">L</button>
+<button class="theme-icon-btn" data-theme="dark" title="Dark Theme">D</button>
+</div>
+</div>
 <section>
 <h2>Toolbar Number Style</h2>
 <div class="setting"><label for="badgeColor">Number Color:</label><input type="color" id="badgeColor" value="#cccccc"></div>
@@ -24,15 +30,25 @@
 <h2>Popup Style</h2>
 <div class="setting"><label for="popupBg">Popup Background:</label><input type="color" id="popupBg" value="#111111"></div>
 <div class="setting"><label for="popupText">Popup Text Color:</label><input type="color" id="popupText" value="#cccccc"></div>
+<div class="setting"><label for="iconSize">Icon Size:</label><input type="range" id="iconSize" min="50" max="100" value="70"><span id="iconSizeValue">70%</span></div>
 </section>
 <section>
 <h2>Button Colors</h2>
-<div class="setting"><label for="btnCloseOthers">Close Others BG:</label><input type="color" id="btnCloseOthers" value="#ef4444"></div>
-<div class="setting"><label for="btnCloseRight">Close Right BG:</label><input type="color" id="btnCloseRight" value="#f59e0b"></div>
-<div class="setting"><label for="btnSettings">Settings BG:</label><input type="color" id="btnSettings" value="#64748b"></div>
+<div class="setting"><label for="btnUndo">Undo Close:</label><input type="color" id="btnUndo" value="#f97316"></div>
+<div class="setting"><label for="btnDuplicate">Duplicate Tab:</label><input type="color" id="btnDuplicate" value="#737373"></div>
+<div class="setting"><label for="btnMute">Mute Tab:</label><input type="color" id="btnMute" value="#a3a3a3"></div>
+<div class="setting"><label for="btnCloseOthers">Close Others:</label><input type="color" id="btnCloseOthers" value="#ef4444"></div>
+<div class="setting"><label for="btnCloseRight">Close Right:</label><input type="color" id="btnCloseRight" value="#ec4899"></div>
+<div class="setting"><label for="btnRemoveDuplicates">Remove Duplicates:</label><input type="color" id="btnRemoveDuplicates" value="#3b82f6"></div>
+<div class="setting"><label for="btnSettings">Settings:</label><input type="color" id="btnSettings" value="#8b5cf6"></div>
 <div class="setting full-width"><label class="checkbox-label">
-<input type="checkbox" id="btnTransparent" checked> Transparent Button Background
-</label><p class="hint-text">Buttons will have no background, only icons</p></div>
+<input type="checkbox" id="btnTransparent" checked> Show Button Background
+</label><p class="hint-text">When enabled, buttons show colored backgrounds. When disabled, buttons are transparent</p></div>
+</section>
+<section>
+<h2>Tab Cubes Colors</h2>
+<div class="setting"><label for="tabCubeColor">Tab Cubes:</label><input type="color" id="tabCubeColor" value="#667eea"></div>
+<div class="setting"><label for="tabCubePlusColor">Tab Cube (+):</label><input type="color" id="tabCubePlusColor" value="#764ba2"></div>
 </section>
 <section>
 <h2>Slime Outline</h2>
@@ -48,12 +64,15 @@
 </label><p class="hint-text">Uncheck to keep popup open after closing tabs</p></div>
 </section>
 <div class="actions">
-<button id="save" class="btn btn-primary" type="button">Save</button>
-<button id="reset" class="btn btn-secondary" type="button">Reset</button>
+<button id="save" class="btn btn-primary" type="button">
+<img src="icons/slime-save.svg" alt=""> Save
+</button>
+<button id="reset" class="btn btn-secondary" type="button">
+<img src="icons/slime-reset.svg" alt=""> Reset
+</button>
 </div>
 <div id="message" class="message" role="status"></div>
 </div>
-<script src="utils.js"></script>
-<script src="options.js"></script>
+<script type="module" src="options.js"></script>
 </body>
 </html>
