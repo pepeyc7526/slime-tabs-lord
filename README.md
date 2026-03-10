@@ -45,5 +45,7 @@ MIT License
 **Permissions:**
 - `tabs` — count/close tabs only
 - `storage` — save your settings locally
+- `sessions` — restore closed tabs
+- `theme` — dark/light mode
 
 All data stays on your device.
