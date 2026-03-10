@@ -7,43 +7,28 @@
   <img src="https://img.shields.io/github/license/pepeyc7526/slime-tabs-lord?style=flat-square" alt="License">
 </p>
 
-# 🐌 Slime Tabs Lord
+# 🟣 Slime Tabs Lord
 
-**Close tabs with style!** An animated slime mascot helps you manage your browser tabs.
+> Kawaii slime helps you manage Firefox tabs ✨
+
+[![Get it on Firefox](https://img.shields.io/amo/v/slime-tabs-lord?label=Install&color=9333ea)](https://addons.mozilla.org/en-US/firefox/addon/slime-tabs-lord/)
+[![Releases](https://img.shields.io/github/v/release/pepeyc7526/slime-tabs-lord?color=9333ea)](https://github.com/pepeyc7526/slime-tabs-lord/releases)
 
 ## ✨ Features
+🗑️ Close tabs • ↩️ Undo • 🔇 Mute • 📋 Duplicate • 🎨 Customize • 💡 Fun facts
 
-- 🔢 Big canvas number in toolbar
-- 🎨 Animated slime in popup
-- 🎯 Quick tab management
-- 🌈 Fully customizable colors
+## 🔒 Privacy
+✅ No data collection • ✅ No external requests • ✅ No tracking
 
-## 🔐 Permissions
+## 💜 Credits
+Crafted with **Qwen3.5-Plus** chat assistant.
 
-| Permission | Why? |
-|------------|------|
-| `tabs` | To count and close tabs |
-| `storage` | To save settings |
-
-**No tracking, no external requests.**
-
-## 📋 Requirements
-
-- Firefox 142.0 or higher
-
-## 📦 Installation
-
-**From Mozilla Add-ons:**  
-👉 [Install from Firefox Add-ons](https://addons.mozilla.org/firefox/addon/slime-tabs-lord/)
+<p align="center"><a href="https://addons.mozilla.org/en-US/firefox/addon/slime-tabs-lord/">Install from Firefox Add-ons</a></p>
 
 **Manual install (from GitHub):**
 1. Download the latest `.xpi` from [Releases](https://github.com/pepeyc7526/slime-tabs-lord/releases)
 2. Open Firefox → `about:debugging` → "This Firefox" → "Load Temporary Add-on"
 3. Select the `.xpi` file
-
-## 🤝 Credits
-
-Made with **Qwen AI** assistance ❤️
 
 ## 📄 License
 
