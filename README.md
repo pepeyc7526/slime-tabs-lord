@@ -23,7 +23,7 @@
 ## 💜 Credits
 Crafted with **Qwen3.5-Plus** chat assistant.
 
-<p align="center"><a href="https://addons.mozilla.org/en-US/firefox/addon/slime-tabs-lord/">Install from Firefox Add-ons</a></p>
+<p align="left"><a href="https://addons.mozilla.org/en-US/firefox/addon/slime-tabs-lord/">Install from Firefox Add-ons</a></p>
 
 **Manual install (from GitHub):**
 1. Download the latest `.xpi` from [Releases](https://github.com/pepeyc7526/slime-tabs-lord/releases)
