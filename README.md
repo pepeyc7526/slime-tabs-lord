@@ -2,7 +2,6 @@
 <p align="left">
   <img src="https://img.shields.io/badge/Firefox-142.0+-orange?style=flat-square" alt="Firefox">
   <img src="https://img.shields.io/badge/Manifest-V3-blue?style=flat-square" alt="Manifest">
-  <img src="https://img.shields.io/github/v/release/pepeyc7526/slime-tabs-lord?style=flat-square" alt="Version">
   <img src="https://img.shields.io/github/languages/top/pepeyc7526/slime-tabs-lord?style=flat-square" alt="Language">
   <img src="https://img.shields.io/github/license/pepeyc7526/slime-tabs-lord?style=flat-square" alt="License">
 </p>
