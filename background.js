@@ -5,6 +5,7 @@ canvas.height = 48;
 const ctx = canvas.getContext('2d');
 let badgeTimeout = null;
 let isUpdating = false;
+
 function drawRoundedRect(ctx, x, y, width, height, radius) {
 if (typeof ctx.roundRect === 'function') {
 ctx.roundRect(x, y, width, height, radius);
@@ -22,6 +23,7 @@ ctx.quadraticCurveTo(x, y, x + radius, y);
 ctx.closePath();
 }
 }
+
 async function updateBadge() {
 if (isUpdating) return;
 clearTimeout(badgeTimeout);
@@ -68,8 +70,8 @@ ctx.font = `${settings.fontWeight} ${fontSize}px 'Arial Narrow', 'Roboto Condens
 ctx.textAlign = 'center';
 ctx.textBaseline = 'middle';
 ctx.fillText(count.toString(), 24, 24 + fontSize * 0.08);
-if (browser.browserAction && browser.browserAction.setIcon) {
-browser.browserAction.setIcon({ imageData: ctx.getImageData(0, 0, 48, 48) });
+if (browser.action && browser.action.setIcon) {
+browser.action.setIcon({ imageData: ctx.getImageData(0, 0, 48, 48) });
 }
 } catch (error) {
 console.error('Slime Tabs Lord: Badge update failed', error);
@@ -78,6 +80,7 @@ isUpdating = false;
 }
 }, 150);
 }
+
 browser.tabs.onCreated.addListener(updateBadge);
 browser.tabs.onRemoved.addListener(updateBadge);
 browser.tabs.onActivated.addListener(updateBadge);
@@ -98,11 +101,12 @@ const settings = await browser.storage.local.get('theme');
 if (!settings.theme) {
 const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 const themeData = {
-light: { badgeColor: '#1e293b', bgColor: '#f8fafc', popupBg: '#f8fafc', popupText: '#1e293b', slimeOutline: '#334155', tabCubeColor: '#5468ff', tabCubePlusColor: '#6366f1' },
-dark: { badgeColor: '#e0e0e0', bgColor: '#0f0f0f', popupBg: '#0f0f0f', popupText: '#e0e0e0', slimeOutline: '#ffffff', tabCubeColor: '#667eea', tabCubePlusColor: '#764ba2' }
+light: { badgeColor: '#1e293b', bgColor: '#f8fafc', popupBg: '#f8fafc', popupText: '#1e293b', slimeOutline: '#334155', tabCubeColor: '#FFB786', tabCubePlusColor: '#FF8E8E' },
+dark: { badgeColor: '#e0e0e0', bgColor: '#0f0f0f', popupBg: '#0f0f0f', popupText: '#e0e0e0', slimeOutline: '#ffffff', tabCubeColor: '#FFB786', tabCubePlusColor: '#FF8E8E' }
 }[theme];
 await browser.storage.local.set({ theme, ...themeData });
 }
 updateBadge();
 });
+
 updateBadge();

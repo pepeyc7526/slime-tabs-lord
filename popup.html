@@ -32,27 +32,29 @@
 <div class="tab-cubes" id="tabCubes"></div>
 </div>
 </div>
-<div class="button-row">
-<button id="undoClose" class="btn btn-undo">
-<img src="icons/slime-undo-close.svg" class="btn-icon" alt="">
-</button>
-<button id="duplicateTab" class="btn btn-duplicate">
-<img src="icons/slime-duplicate-tab.svg" class="btn-icon" alt="">
-</button>
-<button id="muteTab" class="btn btn-mute">
-<img src="icons/slime-toggle-mute.svg" class="btn-icon" alt="">
-</button>
+<div class="pages-wrapper">
+<div class="pages-container" id="pagesContainer">
+<div class="page" id="page1"></div>
+<div class="page" id="page2"></div>
 </div>
-<div class="button-row">
-<button id="closeOthers" class="btn btn-danger">
-<img src="icons/slime-close-other.svg" class="btn-icon" alt="">
-</button>
-<button id="closeRight" class="btn btn-warning">
-<img src="icons/slime-close-right.svg" class="btn-icon" alt="">
-</button>
-<button id="removeDuplicates" class="btn btn-remove-duplicates">
-<img src="icons/slime-close-duplicates.svg" class="btn-icon" alt="">
-</button>
+<div class="page-indicator">
+<button class="page-dot active" data-page="1"></button>
+<button class="page-dot" data-page="2"></button>
+</div>
+</div>
+<div style="display:none;">
+<button id="newTab" class="btn btn-new-tab"><img src="icons/slime-new-tab.svg" class="btn-icon" alt=""></button>
+<button id="closeCurrent" class="btn btn-close-current"><img src="icons/slime-close-current.svg" class="btn-icon" alt=""></button>
+<button id="closeRight" class="btn btn-warning"><img src="icons/slime-close-right.svg" class="btn-icon" alt=""></button>
+<button id="closeOthers" class="btn btn-danger"><img src="icons/slime-close-other.svg" class="btn-icon" alt=""></button>
+<button id="duplicateTab" class="btn btn-duplicate"><img src="icons/slime-duplicate-tab.svg" class="btn-icon" alt=""></button>
+<button id="removeDuplicates" class="btn btn-remove-duplicates"><img src="icons/slime-close-duplicates.svg" class="btn-icon" alt=""></button>
+<button id="pinUnpin" class="btn btn-pin"><img src="icons/slime-pin.svg" class="btn-icon" alt=""></button>
+<button id="bookmarkAll" class="btn btn-bookmark"><img src="icons/slime-bookmark.svg" class="btn-icon" alt=""></button>
+<button id="suspendTabs" class="btn btn-suspend"><img src="icons/slime-suspend.svg" class="btn-icon" alt=""></button>
+<button id="muteTab" class="btn btn-mute"><img src="icons/slime-toggle-mute.svg" class="btn-icon" alt=""></button>
+<button id="muteOthers" class="btn btn-mute-others"><img src="icons/slime-mute-others.svg" class="btn-icon" alt=""></button>
+<button id="undoClose" class="btn btn-undo"><img src="icons/slime-undo-close.svg" class="btn-icon" alt=""></button>
 </div>
 </div>
 <script type="module" src="popup.js"></script>

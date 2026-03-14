@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Settings - Slime Tabs Lord</title>
+<title>Settings — Slime Tabs Lord</title>
 <link rel="stylesheet" href="options.css">
 </head>
 <body class="dark-theme">
@@ -33,17 +33,42 @@
 <div class="setting"><label for="iconSize">Icon Size:</label><input type="range" id="iconSize" min="50" max="100" value="70"><span id="iconSizeValue">70%</span></div>
 </section>
 <section>
-<h2>Button Colors</h2>
-<div class="setting"><label for="btnUndo">Undo Close:</label><input type="color" id="btnUndo" value="#f97316"></div>
-<div class="setting"><label for="btnDuplicate">Duplicate Tab:</label><input type="color" id="btnDuplicate" value="#737373"></div>
-<div class="setting"><label for="btnMute">Mute Tab:</label><input type="color" id="btnMute" value="#a3a3a3"></div>
-<div class="setting"><label for="btnCloseOthers">Close Others:</label><input type="color" id="btnCloseOthers" value="#ef4444"></div>
-<div class="setting"><label for="btnCloseRight">Close Right:</label><input type="color" id="btnCloseRight" value="#ec4899"></div>
-<div class="setting"><label for="btnRemoveDuplicates">Remove Duplicates:</label><input type="color" id="btnRemoveDuplicates" value="#3b82f6"></div>
-<div class="setting"><label for="btnSettings">Settings:</label><input type="color" id="btnSettings" value="#8b5cf6"></div>
+<h2>Button & Slime Colors</h2>
+<p class="hint-text" style="margin-bottom: 15px;">Background colors match the slime icon colors.</p>
+<div class="setting"><label for="btnNewTab">New Tab:</label><input type="color" id="btnNewTab" value="#D6EFED"></div>
+<div class="setting"><label for="btnCloseCurrent">Close Current:</label><input type="color" id="btnCloseCurrent" value="#85586F"></div>
+<div class="setting"><label for="btnCloseRight">Close Right:</label><input type="color" id="btnCloseRight" value="#AC7D88"></div>
+<div class="setting"><label for="btnCloseOthers">Close Others:</label><input type="color" id="btnCloseOthers" value="#FEC8D8"></div>
+<div class="setting"><label for="btnDuplicate">Duplicate Tab:</label><input type="color" id="btnDuplicate" value="#B7D3DF"></div>
+<div class="setting"><label for="btnRemoveDuplicates">Remove Duplicates:</label><input type="color" id="btnRemoveDuplicates" value="#957DAD"></div>
+<div class="setting"><label for="btnPinUnpin">Pin/Unpin:</label><input type="color" id="btnPinUnpin" value="#F8ECD1"></div>
+<div class="setting"><label for="btnBookmarkAll">Bookmark All:</label><input type="color" id="btnBookmarkAll" value="#DEB6AB"></div>
+<div class="setting"><label for="btnSuspendTabs">Suspend Tabs:</label><input type="color" id="btnSuspendTabs" value="#C9BBCF"></div>
+<div class="setting"><label for="btnMute">Mute Tab:</label><input type="color" id="btnMute" value="#B8E6D5"></div>
+<div class="setting"><label for="btnMuteOthers">Mute Others:</label><input type="color" id="btnMuteOthers" value="#898AA6"></div>
+<div class="setting"><label for="btnUndo">Undo Close:</label><input type="color" id="btnUndo" value="#E0BBE4"></div>
+<div class="setting"><label for="btnSettings">Settings:</label><input type="color" id="btnSettings" value="#a78bfa"></div>
 <div class="setting full-width"><label class="checkbox-label">
 <input type="checkbox" id="btnTransparent" checked> Show Button Background
-</label><p class="hint-text">When enabled, buttons show colored backgrounds. When disabled, buttons are transparent</p></div>
+</label><p class="hint-text">When enabled, buttons show colored backgrounds.</p></div>
+</section>
+<section>
+<h2>Button Visibility & Order</h2>
+<p class="hint-text" style="margin-bottom: 10px;">Drag the handle (☰) to reorder buttons. Uncheck to hide. Hidden buttons are skipped automatically.</p>
+<div style="display: flex; gap: 10px; margin-bottom: 15px;">
+<button id="selectAllVisibility" class="btn btn-secondary" type="button" style="flex: 1; padding: 6px; font-size: 12px; min-height: auto;">Select All</button>
+<button id="deselectAllVisibility" class="btn btn-secondary" type="button" style="flex: 1; padding: 6px; font-size: 12px; min-height: auto;">Deselect All</button>
+</div>
+<div id="buttonsList" style="display: flex; flex-direction: column; gap: 8px;"></div>
+</section>
+<section>
+<h2>Data Management</h2>
+<div class="setting full-width">
+<button id="exportSettings" class="btn btn-secondary" type="button" style="width: 100%; margin-bottom: 10px;">Export Settings to File</button>
+<label for="importFile" class="btn btn-secondary" style="width: 100%; text-align: center; cursor: pointer;">Import Settings from File</label>
+<input type="file" id="importFile" accept=".json" style="display: none;">
+<p class="hint-text" style="margin-top: 10px;">Export saves all settings to JSON. Import restores them.</p>
+</div>
 </section>
 <section>
 <h2>Tab Cubes Colors</h2>
@@ -64,12 +89,8 @@
 </label><p class="hint-text">Uncheck to keep popup open after closing tabs</p></div>
 </section>
 <div class="actions">
-<button id="save" class="btn btn-primary" type="button">
-<img src="icons/slime-save.svg" alt=""> Save
-</button>
-<button id="reset" class="btn btn-secondary" type="button">
-<img src="icons/slime-reset.svg" alt=""> Reset
-</button>
+<button id="save" class="btn btn-primary" type="button">Save</button>
+<button id="reset" class="btn btn-secondary" type="button">Reset</button>
 </div>
 <div id="message" class="message" role="status"></div>
 </div>
