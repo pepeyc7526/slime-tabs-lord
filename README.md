@@ -26,7 +26,7 @@
 ✅ No data collection • ✅ No external requests • ✅ No tracking
 
 ## 💜 Credits
-Crafted with **Qwen3.5-Plus** chat assistant.
+Crafted with <a href="https://chat.qwen.ai/">**Qwen3.5-Plus**</a> chat assistant.
 
 <p align="left"><a href="https://addons.mozilla.org/en-US/firefox/addon/slime-tabs-lord/">Install from Firefox Add-ons</a></p>
 
