@@ -14,7 +14,7 @@
 [![Get it on Firefox](https://img.shields.io/amo/v/slime-tabs-lord?label=Install&color=9333ea)](https://addons.mozilla.org/en-US/firefox/addon/slime-tabs-lord/)
 [![Releases](https://img.shields.io/github/v/release/pepeyc7526/slime-tabs-lord?color=9333ea)](https://github.com/pepeyc7526/slime-tabs-lord/releases)
 
-## 🚀 What's New in v4.0
+## 🚀 What's New in v4.0.1
 - **Manifest V3 Ready:** Migrated to the latest architecture for better performance and security.
 - **🦊 New Kawaii Colors:** Default tab cubes are now Firefox-inspired Orange & Red.
 - **🎨 Smart Customization:** Drag & drop to reorder buttons, toggle visibility, and export/import settings.
