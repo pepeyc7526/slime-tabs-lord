@@ -13,7 +13,7 @@
 [![Get it on Firefox](https://img.shields.io/amo/v/slime-tabs-lord?label=Install&color=9333ea)](https://addons.mozilla.org/en-US/firefox/addon/slime-tabs-lord/)
 [![Releases](https://img.shields.io/github/v/release/pepeyc7526/slime-tabs-lord?color=9333ea)](https://github.com/pepeyc7526/slime-tabs-lord/releases)
 
-## 🚀 What's New in v4.0.1
+## 🚀 What's New in v1.0.1
 - **Manifest V3 Ready:** Migrated to the latest architecture for better performance and security.
 - **🦊 New Kawaii Colors:** Default tab cubes are now Firefox-inspired Orange & Red.
 - **🎨 Smart Customization:** Drag & drop to reorder buttons, toggle visibility, and export/import settings.
@@ -28,7 +28,7 @@
 ## 💜 Credits
 Crafted with <a href="https://chat.qwen.ai/">**Qwen3.5-Plus**</a> chat assistant.
 
-<p align="left"><a href="https://addons.mozilla.org/en-US/firefox/addon/slime-tabs-lord/">Install from Firefox Add-ons</a></p>
+<p align="left"><a href="https://addons.mozilla.org/en-US/firefox/addon/slimetabslord/">Install from Firefox Add-ons</a></p>
 
 **Manual install (from GitHub):**
 1. Download the latest `.xpi` from [Releases](https://github.com/pepeyc7526/slime-tabs-lord/releases)
